@@ -1,0 +1,25 @@
+{
+  "name": "cerner",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "lab"
+  },
+  "keywords": [],
+  "author": "wyatt",
+  "license": "MPL-2.0",
+  "dependencies": {
+    "boom": "7.3.0",
+    "graphi": "6.3.1",
+    "hapi": "17.8.1",
+    "inert": "5.1.2",
+    "lodash": "4.17.11",
+    "random-name": "0.1.2"
+  },
+  "devDependencies": {
+    "code": "5.2.x",
+    "easygraphql-tester": "1.0.x",
+    "lab": "18.0.x"
+  }
+}

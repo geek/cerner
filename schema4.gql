@@ -1,0 +1,34 @@
+type Address {
+  lineone: String!
+  linetwo: String
+  city: String!
+  state: StateCode
+  zipcode: String
+}
+
+enum StateCode {
+  MO
+  KS
+}
+
+type User {
+  id: ID!
+  email: String!
+  firstname: String
+  lastname: String
+  address: Address
+}
+
+input UserInput {
+  email: String!
+  firstname: String!
+  lastname: String!
+}
+
+type Mutation {
+  createUser(user: UserInput!): User
+}
+
+type Query {
+  getUser(id: ID!): User
+}
